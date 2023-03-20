@@ -11,7 +11,6 @@
 
 .container{
     padding: 3.5rem 2rem 4.5rem 2rem;
-    background-color: aqua;
 }
 
 
@@ -20,6 +19,14 @@
 /*Titles*/
 
 /*Backgrounds*/
+
+.purple{
+    background-color:  #9792E4;
+}
+
+.white{
+    background-color: #FFFFFF;
+}
 
 /*Buttons*/
 
@@ -43,7 +50,7 @@ header{
     top: 0;
     left: 0;
     z-index: 999;
-    background-color: red;
+    background-color: #0084FD;
 }
 
 nav{
@@ -57,7 +64,6 @@ nav{
 
 main{
     margin-top: 80px;
-    background-color: #00bd10;
 }
 
 
@@ -65,7 +71,7 @@ main{
 
 .box{
     width: 100%;
-    background-color:  #ff00d9;
+    background-color:  #B5DDFF;
     margin-bottom: 1.5rem;
     padding: 2.5rem 1.8rem;
 }
@@ -78,13 +84,13 @@ main{
 
 /*Planning*/
 
+
 /*Testimonials*/
 
 .testimonials{
     min-width: 294px;
     margin-bottom: 2rem;
     padding: 2rem 1.5rem 2rem 1.5rem;
-    background-color: bisque;
 }
 
 /*Features*/
@@ -92,7 +98,6 @@ main{
 .benefits{
     margin-bottom: 2rem;
     padding: 2.5rem 2rem 2rem 2rem;
-    background-color: azure;
 }
 
 /*About us*/
