@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <title>htmlcss-responsive-layout</title>
 </head>
@@ -17,11 +17,9 @@
     <header>
         <nav class="container">
             <img src="./img/logo.png" alt="Logo">
-            <div>
-                <img src="./img/bars-solid.svg" alt="menu">
+            <div class="menu text-white">
+                <i class="fa-solid fa-bars"></i>
             </div>
-
-
         </nav>
     </header>
 
@@ -39,55 +37,55 @@
                         <p class="text-grey bold line-height-1-8">
                             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus deserunt rem consequatur iusto tenetur tempora libero et rerum. Sit, optio.
                         </p>
-
+                        <button class="button button-blue">
+                            <i class="fa-brands fa-apple"></i>
+                            <span>App Store</span>
+                        </button>
                     </div>
-                    <div class="box-right">
+                    <div class="text-center box-right">
                         <img src="./img/phone.png" alt="Phone">
-
-
                     </div>
                 </div>
 
-                <div class="box bord-small">
-                    <h3 class="text-blu text-center">
-                        Get a demo application
+                <div class="text-center box bord-small">
+                    <i class="fa-solid fa-file-code box-icon text-blu"></i>
+                    <h3 class="text-blu">
+                        Clean Code
                     </h3>
-                    <p class="text-grey bold text-center line-height-1-8">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus deserunt rem consequatur iusto tenetur tempora libero et rerum. Sit, optio.
+                    <p class="text-grey bold line-height-1-8">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia nostrum exercitationem dolores perferendis, adipisci eligendi mollitia iste a aspernatur quasi?
                     </p>
-
                 </div>
 
-                <div class="box bord-small">
-                    <h3 class="text-blu text-center">
-                        Get a demo application
+                <div class="text-center box bord-small">
+                    <i class="fa-solid fa-compass-drafting box-icon text-blu"></i>
+                    <h3 class="text-blu">
+                        Web Design
                     </h3>
-                    <p class="text-grey bold text-center line-height-1-8">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus deserunt rem consequatur iusto tenetur tempora libero et rerum. Sit, optio.
+                    <p class="text-grey bold line-height-1-8">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia nostrum exercitationem dolores perferendis, adipisci eligendi mollitia iste a aspernatur quasi?
                     </p>
-
                 </div>
 
-                <div class="box bord-small">
-                    <h3 class="text-blu text-center">
-                        Get a demo application
+                <div class="text-center box bord-small">
+                    <i class="fa-solid fa-laptop-code box-icon text-blu"></i>
+                    <h3 class="text-blu">
+                        Development
                     </h3>
-                    <p class="text-grey bold text-center line-height-1-8">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus deserunt rem consequatur iusto tenetur tempora libero et rerum. Sit, optio.
+                    <p class="text-grey bold line-height-1-8">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia nostrum exercitationem dolores perferendis, adipisci eligendi mollitia iste a aspernatur quasi?
                     </p>
-
                 </div>
 
-                <div class="box bord-small">
-                    <h3 class="text-blu text-center">
-                        Get a demo application
+                <div class="box bord-small text-center">
+                    <i class="fa-solid fa-bullhorn box-icon text-blu"></i>
+                    <h3 class="text-blu">
+                        Branding
                     </h3>
-                    <p class="text-grey bold text-center line-height-1-8">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus deserunt rem consequatur iusto tenetur tempora libero et rerum. Sit, optio.
+                    <p class="text-grey bold line-height-1-8">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia nostrum exercitationem dolores perferendis, adipisci eligendi mollitia iste a aspernatur quasi?
                     </p>
-
                 </div>
-
             </div>
 
         </section>
@@ -97,17 +95,26 @@
             <div class="container">
                 <div class="left-planning">
                     <img src="./img/planning1.png" alt="Planning 1">
-                <div class="textContent text-left">
-                    <h2>Strategic planning</h2>
-                    <p class="line-height-1-8">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident optio repellendus reiciendis sunt beatae in. Provident, illum, quidem et totam odit expedita voluptas asperiores explicabo illo, corporis quasi hic laboriosam.</p>
+                <div>
+                    <h2>
+                        Strategic planning
+                    </h2>
+                    <p class="line-height-1-8">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident optio repellendus reiciendis sunt beatae in. Provident, illum, quidem et totam odit expedita voluptas asperiores explicabo illo, corporis quasi hic laboriosam.
+                    </p>
                 </div>
+
                 </div>
                 <div class="right-planning">
                     <div id="app" class="text-center bord-large white text-dark">
                         <img src="./img/planning2.png" alt="Planning 2">
-                        <h3 >App development</h3>
-                        <p class="italic regular line-height-1-8">Develop an on-demand app for your delivery business to reach your targeted customers without any interruption.</p>
-                        <a href="#about-us" class="fa-solid fa-arrow-down h3 purple"></a>
+                        <h3 >
+                            App development
+                        </h3>
+                        <p class="italic regular line-height-1-8">
+                            Develop an on-demand app for your delivery business to reach your targeted customers without any interruption.
+                        </p>
+                        <a href="#get-started" class="fa-solid fa-arrow-down h2-small text-dark purple"></a>
                     </div>
                 </div>
             </div>
@@ -118,22 +125,31 @@
         <section id="testimonials">
             <div class="container">
                 <div class="text-center description">
-                    <p class="uppercase">Testimonials</p>
-                    <h2 class="h2-small text-purple">We are committed expert partners</h2>
-                    <p class="line-height-1-8">We place huge value on strong relationships and have seen the benefit they bring to our business. Customer feedback is vital in helping us to get it right.</p>
-
+                    <p class="uppercase">
+                        Testimonials
+                    </p>
+                    <h2 class="h2-small text-purple">
+                        We are committed expert partners
+                    </h2>
+                    <p class="line-height-1-8 par-small">
+                        We place huge value on strong relationships and have seen the benefit they bring to our business. Customer feedback is vital in helping us to get it right.
+                    </p>
                 </div>
+
                 <div class="testimonial-box bord-large purple text-center text-white">
                     <div class="testimonials-photo">
                         <img src="./img/testimonial1.jpg" alt="Photo of the testimonial 1">
                     </div>
+
                     <div class="testimonial-info">
                         <p class="testimonial-description par-small">
                             <i class="fa-solid fa-quote-left par-large"></i>
                             <span class="line-height-1-8">Vitae suscipit tellus mauris a diam maecenas sed enim ut. Mauris augue neque gravida in fermentum. Praesent semper feugiat nibh pulvinar proin.</span>
                             <i class="fa-solid fa-quote-right par-large"></i>
                         </p>
-                        <p class=" bold uppercase par-large">Nat Reynolds</p>
+                        <p class="bold uppercase par-large">
+                            Nat Reynolds
+                        </p>
                     </div>
                 </div>
 
@@ -141,13 +157,16 @@
                     <div class="testimonials-photo">
                         <img src="./img/testimonial2.jpg" alt="Photo of the testimonial 1">
                     </div>
+
                     <div class="testimonial-info">
                         <p class="testimonial-description par-small">
                             <i class="fa-solid fa-quote-left par-large"></i>
                             <span class="line-height-1-8">Vitae suscipit tellus mauris a diam maecenas sed enim ut. Mauris augue neque gravida in fermentum. Praesent semper feugiat nibh pulvinar proin.</span>
                             <i class="fa-solid fa-quote-right par-large"></i>
                         </p>
-                        <p class=" bold uppercase par-large">Celia Almeda</p>
+                        <p class="bold uppercase par-large">
+                            Celia Almeda
+                        </p>
                     </div>
                 </div>
 
@@ -155,13 +174,16 @@
                     <div class="testimonials-photo">
                         <img src="./img/testimonial3.jpg" alt="Photo of the testimonial 1">
                     </div>
+
                     <div class="testimonial-info">
                         <p class="testimonial-description par-small">
                             <i class="fa-solid fa-quote-left par-large"></i>
                             <span class="line-height-1-8">Vitae suscipit tellus mauris a diam maecenas sed enim ut. Mauris augue neque gravida in fermentum. Praesent semper feugiat nibh pulvinar proin.</span>
                             <i class="fa-solid fa-quote-right par-large"></i>
                         </p>
-                        <p class=" bold uppercase par-large">Bob Roberts</p>
+                        <p class="bold uppercase par-large">
+                            Bob Roberts
+                        </p>
                     </div>
                 </div>
             </div>
@@ -175,41 +197,83 @@
                 <h2 class="text-white h2-medium text-center">Benefits of working with us</h2>
                 <div class="benefits">
                     <div class="benefit bord-small white">
-                        <p class="number text-purple bold">01</p>
-                        <h3 class="text-purple">Hight quality</h3>
-                        <p class="line-height-1-8">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus veniam pariatur voluptas in veritatis minima nihil? Dolore cum culpa laborum!</p>
+                        <h4 class="number text-purple bold">
+                            01
+                        </h4>
+                        <h3 class="text-purple">
+                            Hight Quality
+                        </h3>
+                        <p class="line-height-1-8">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus veniam pariatur voluptas in veritatis minima nihil? Dolore cum culpa laborum!
+                        </p>
+                        <button class="button button-purple">more</button>
                     </div>
 
                     <div class="benefit bord-small white">
-                        <p class="number text-purple bold">02</p>
-                        <h3 class="text-purple">Creative team</h3>
-                        <p class="line-height-1-8">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus veniam pariatur voluptas in veritatis minima nihil? Dolore cum culpa laborum!</p>
+                        <h4 class="number text-purple bold">
+                            02
+                        </h4>
+                        <h3 class="text-purple">
+                            Creative Team
+                        </h3>
+                        <p class="line-height-1-8">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus veniam pariatur voluptas in veritatis minima nihil? Dolore cum culpa laborum!
+                        </p>
+                        <button class="button button-purple">more</button>
                     </div>
 
                     <div class="benefit bord-small white">
-                        <p class="number text-purple bold">03</p>
-                        <h3 class="text-purple">Amazing results</h3>
-                        <p class="line-height-1-8">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus veniam pariatur voluptas in veritatis minima nihil? Dolore cum culpa laborum!</p>
+                        <h4 class="number text-purple bold">
+                            03
+                        </h4>
+                        <h3 class="text-purple">
+                            Amazing Results
+                        </h3>
+                        <p class="line-height-1-8">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus veniam pariatur voluptas in veritatis minima nihil? Dolore cum culpa laborum!
+                        </p>
+                        <button class="button button-purple">more</button>
                     </div>
 
                     <div class="benefit bord-small white">
-                        <p class="number text-purple bold">04</p>
-                        <h3 class="text-purple">Best pricing</h3>
-                        <p class="line-height-1-8">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus veniam pariatur voluptas in veritatis minima nihil? Dolore cum culpa laborum!</p>
+                        <h4 class="number text-purple bold">
+                            04
+                        </h4>
+                        <h3 class="text-purple">
+                            Best Pricing
+                        </h3>
+                        <p class="line-height-1-8">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus veniam pariatur voluptas in veritatis minima nihil? Dolore cum culpa laborum!
+                        </p>
+                        <button class="button button-purple">more</button>
                     </div>
 
                     <div class="benefit bord-small white">
-                        <p class="number text-purple bold">05</p>
-                        <h3 class="text-purple">Innovations</h3>
-                        <p class="line-height-1-8">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus veniam pariatur voluptas in veritatis minima nihil? Dolore cum culpa laborum!</p>
+                        <h4 class="number text-purple bold">
+                            05
+                        </h4>
+                        <h3 class="text-purple">
+                            Innovations
+                        </h3>
+                        <p class="line-height-1-8">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus veniam pariatur voluptas in veritatis minima nihil? Dolore cum culpa laborum!
+                        </p>
+                        <button class="button button-purple">more</button>
                     </div>
 
                     <div class="benefit bord-small white">
-                        <p class="number text-purple bold">06</p>
-                        <h3 class="text-purple">24/7 support</h3>
-                        <p class="line-height-1-8">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus veniam pariatur voluptas in veritatis minima nihil? Dolore cum culpa laborum!</p>
+                        <h4 class="number text-purple bold"
+                        >06
+                        </h4>
+                        <h3 class="text-purple">
+                            24/7 Support
+                        </h3>
+                        <p class="line-height-1-8"
+                        >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus veniam pariatur voluptas in veritatis minima nihil? Dolore cum culpa laborum!
+                        </p>
+                        <button class="button button-purple">more</button>
                     </div>
-
+                </div>
             </div>
 
         </section>
@@ -218,22 +282,29 @@
         <section id="about-us">
             <div class="container">
                 <div class="left-about">
-                    <h2 class="text-purple h2-medium">About us</h2>
-                    <p class="par-small line-height-1-8">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex nihil tenetur unde esse, quasi repellendus quos commodi numquam possimus ullam corrupti enim explicabo nobis eveniet perspiciatis rerum non expedita. Expedita eveniet officiis illo voluptatum, nobis culpa sunt, natus eaque magni sit dolores nemo. Maxime voluptas nobis fugit possimus quis, pariatur tempore quia veritatis, natus error ipsam quasi, non facere suscipit?</p>
-                    <p class="par-small line-height-1-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente magnam magni nihil dolorem tempore iure veniam! Sequi reiciendis facilis inventore, error doloribus eligendi. Ipsa et quibusdam consectetur explicabo, voluptatibus quisquam modi totam expedita. Voluptatum magnam alias quidem vitae atque saepe quasi expedita dolores ipsum natus.</p>
+                    <h2 class="text-purple h2-medium">
+                        About Us
+                    </h2>
+                    <p class="par-small line-height-1-8">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex nihil tenetur unde esse, quasi repellendus quos commodi numquam possimus ullam corrupti enim explicabo nobis eveniet perspiciatis rerum non expedita. Expedita eveniet officiis illo voluptatum, nobis culpa sunt, natus eaque magni sit dolores nemo. Maxime voluptas nobis fugit possimus quis, pariatur tempore quia veritatis, natus error ipsam quasi, non facere suscipit?
+                    </p>
+                    <p class="par-small line-height-1-8">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente magnam magni nihil dolorem tempore iure veniam! Sequi reiciendis facilis inventore, error doloribus eligendi. Ipsa et quibusdam consectetur explicabo, voluptatibus quisquam modi totam expedita. Voluptatum magnam alias quidem vitae atque saepe quasi expedita dolores ipsum natus.
+                    </p>
                 </div>
 
                 <div class="right-about">
                     <div class="testimonials-photo">
                         <img src="./img/about.jpg" alt="About us photo">
-                        <i class="fa-solid fa-quote-left txt-primary-color"></i>
+                        <i class="fa-solid fa-quote-left text-purple"></i>
                     </div>
-                    <h3 class="txt-primary-color">I help companies tincidunt tortor aliquam nulla facilisi cras fermentum odio.</h3>
-                    <button></button>
+                    <h3 class="text-purple">
+                        I help companies tincidunt tortor aliquam nulla facilisi cras fermentum odio.
+                    </h3>
+                    <button class="button button-purple button-no-spacing button-hor-padd-small">
                         <i class="fa-brands fa-linkedin"></i>
                         <span>Find me on linkedin</span>
                     </button>
-
             </div>
 
         </section>
@@ -241,13 +312,27 @@
         <!--Get started-->
         <section class="purple" id="get-started">
             <div class="container text-white text-center">
-                <p class="uppercase">Get started</p>
-                <h2>Simple, transparent pricing</h2>
-                <h2 class="h2-large text-yellow">It's Free!</h2>
-                <p class="line-height-1-8">We're still in beta and we will be for awhile. As we add more functionality, we'll look into other plans with more controls.</p>
-
+                <p class="uppercase subtitle">
+                    Get started
+                </p>
+                <h2 class="mot">
+                    Simple, Transparent, Pricing
+                </h2>
+                <h2 class="h2-large text-yellow">
+                    It's Free!
+                </h2>
+                <p class="line-height-1-8 content">
+                    We're still in beta and we will be for awhile. As we add more functionality, we'll look into other plans with more controls.
+                </p>
+                <button class="button button-white bold">Get started</button>
+                <p class="copyright text-white">
+                    <span>Copyright 2023 Boolean</span>
+                    <i class="dot fa-solid fa-circle bold"></i>
+                    <span>Classe 92</span>
+                    <i class="dot fa-solid fa-circle bold"></i>
+                    <span><a href="#" class="text-white">Privacy policy</a></span>
+                </p>
             </div>
-
         </section>
 
     </main>
@@ -256,11 +341,13 @@
     <footer>
         <div class="container text-white">
             <div class="text-footer text-center">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse culpa eaque voluptate reiciendis eius atque placeat.</p>
-                <p><a href="#" class="text-purple">Lorem ipsum</a> scelerisque mauris pellentesque <a href="#" class="text-purple">Boolean careers</a></p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse culpa eaque voluptate reiciendis eius atque placeat.
+                </p>
+                <p>
+                    <a href="#" class="text-purple">Lorem ipsum</a> scelerisque mauris pellentesque <a href="#" class="text-purple">Boolean careers</a>
+                </p>
             </div>
-        </div>
-
         </div>
 
     </footer>
