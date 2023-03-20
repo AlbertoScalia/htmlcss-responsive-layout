@@ -16,7 +16,93 @@
 
 /*Texts*/
 
+.text-dark{
+    color: #333333;
+}
+
+.text-blu{
+    color: #0084FD;
+}
+
+.text-grey{
+    color: #5a6e7f;
+}
+
+.text-purple{
+    color: #9792E4;
+}
+
+.text-white{
+    color: #FFFFFF;
+}
+
+.text-yellow{
+    color:#FDC15F;
+}
+
+p{
+    font-size: 1.05rem;
+}
+
+.italic{
+    font-style: italic;
+}
+
+.regular{
+    font-weight: 500;
+}
+
+.line-height-1-8{
+    line-height: 1.8;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.uppercase{
+    text-transform: uppercase;
+}
+
+.par-small{
+    font-size: 1.15rem;
+}
+
+.par-large{
+    font-size: 1.35rem;
+}
+
+
+
 /*Titles*/
+
+h2{
+    font-size: 1.8rem;
+    padding: 5rem 0 2.8rem 0;
+}
+
+.h2-small{
+    font-size: 2rem;
+}
+
+.h2-medium{
+    font-size: 2.8rem;
+}
+
+.h2-large{
+    font-size: 3.8rem;
+}
+
+h3{
+    font-size: 1.5rem;
+    margin-bottom: 1.8rem;
+}
+
+
 
 /*Backgrounds*/
 
@@ -26,6 +112,10 @@
 
 .white{
     background-color: #FFFFFF;
+}
+
+.blue{
+    background-color:  #9792E4;
 }
 
 /*Buttons*/
@@ -53,6 +143,10 @@ header{
     background-color: #0084FD;
 }
 
+header .container{
+    padding-top: 1rem;
+}
+
 nav{
     display: flex;
     align-items: center;
@@ -66,6 +160,10 @@ main{
     margin-top: 80px;
 }
 
+#demo, #planning, #testimonials, #features, #about-us, #get-started {
+    display: flex;
+    flex-direction: column;
+}
 
 /*Demo*/
 
@@ -78,29 +176,135 @@ main{
 
 .box-left, .box-right{
     width: 100%;
-    background-color:  #00ff5e;
+}
 
+.box-right img{
+    width: 100%;
 }
 
 /*Planning*/
 
+#planning img{
+    width: 100%;
+}
+
+#planning #app{
+    margin: 1.8rem 0 0 0;
+    padding: 1rem 1rem;
+}
+
+#planning #app h3{
+    margin: 1.4rem 0;
+}
+
+#planning #app a, #planning #app a:visited{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding-top: 12px;
+    margin: 2.5rem 0 1rem 0;
+    text-decoration: none;
+}
+
+#planning #app a:hover{
+    background-color: #665edd;
+    color: white;
+}
+
 
 /*Testimonials*/
 
-.testimonials{
+.testimonial-box{
     min-width: 294px;
     margin-bottom: 2rem;
     padding: 2rem 1.5rem 2rem 1.5rem;
 }
 
+#testimonials h2{
+    padding: 2rem 0;
+}
+
+.testimonials-photo{
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+.testimonials-photo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.testimonial-info .testimonial-description{
+    padding: 1.3rem 0 1.8rem 0;
+}
+
+.description {
+    padding: 0 0.5rem 3rem 0.5rem;
+}
+
 /*Features*/
+
+
+#features .benefit{
+    padding: 2.5rem 2rem 2rem 2rem;
+    margin-bottom: 2rem;
+}
 
 .benefits{
     margin-bottom: 2rem;
     padding: 2.5rem 2rem 2rem 2rem;
 }
 
+.benefit h3{
+    margin-top: 1.5rem;
+}
+
+.benefit p{
+    margin-bottom: 1.5rem;
+}
+
+.benefit .number{
+    font-size: 3rem;
+}
+
+#features h2{
+    padding: 1rem 1rem 4rem 1rem;
+}
+
 /*About us*/
+
+#about-us .testimonials-photo{
+    position: relative;
+}
+
+#about-us .testimonials-photo i{
+    font-size: 5rem;
+    position: absolute;
+    top: -1rem;
+    right: -1rem;
+}
+
+#about-us h3{
+    font-size: calc(1.5rem + 0.15rem);
+}
+
+#about-us p{
+    margin-bottom: 3rem;
+}
+
+#about-us h2{
+    padding: 1rem 1rem 2rem 0;
+}
+
+#about-us .testimonial-photo{
+    width: 180px;
+    height: 180px;
+    margin: 0 0 2rem 0;
+}
+
 
 /*Get started*/
 
@@ -110,7 +314,15 @@ footer .container{
     display: flex;
     justify-content: center;
     padding: 3rem 1rem;
-    background-color: black;
+    background-color: #333333;
+}
+
+footer .container .text-footer{
+    max-width: 450px;
+    padding: 0 1rem;
+}
+footer .container .text-footer p:first-child{
+    margin-bottom: 4rem;
 }
 
 /*Media Queries*/
