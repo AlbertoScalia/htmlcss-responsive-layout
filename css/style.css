@@ -9,6 +9,12 @@
 
 /*Generals*/
 
+.container{
+    padding: 3.5rem 2rem 4.5rem 2rem;
+    background-color: aqua;
+}
+
+
 /*Texts*/
 
 /*Titles*/
@@ -19,22 +25,87 @@
 
 /*Borders*/
 
+.bord-small{
+    border-radius: 20px;
+}
+
+.bord-large{
+    border-radius: 40px;
+}
+
+
 /*Header*/
+
+header{
+    width: 100vw;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background-color: red;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 
 /*Main generals*/
 
+main{
+    margin-top: 80px;
+    background-color: #00bd10;
+}
+
+
 /*Demo*/
+
+.box{
+    width: 100%;
+    background-color:  #ff00d9;
+    margin-bottom: 1.5rem;
+    padding: 2.5rem 1.8rem;
+}
+
+.box-left, .box-right{
+    width: 100%;
+    background-color:  #00ff5e;
+
+}
 
 /*Planning*/
 
 /*Testimonials*/
 
+.testimonials{
+    min-width: 294px;
+    margin-bottom: 2rem;
+    padding: 2rem 1.5rem 2rem 1.5rem;
+    background-color: bisque;
+}
+
 /*Features*/
+
+.benefits{
+    margin-bottom: 2rem;
+    padding: 2.5rem 2rem 2rem 2rem;
+    background-color: azure;
+}
 
 /*About us*/
 
 /*Get started*/
 
 /*Footer*/
+
+footer .container{
+    display: flex;
+    justify-content: center;
+    padding: 3rem 1rem;
+    background-color: black;
+}
 
 /*Media Queries*/
