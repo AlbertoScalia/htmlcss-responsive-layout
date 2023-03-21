@@ -227,7 +227,7 @@ header .container {
 
 nav {
     display: flex;
-   /* align-items: center;*/
+    align-items: center;
     justify-content: space-between;
 }
 
@@ -522,20 +522,6 @@ footer .container {
         float: left;
     }
 
-    #features .container {
-        justify-content: center;
-    }
-
-    .benefit {
-        width: calc(100% / 2 - 1.5rem);
-    }
-
-    .benefits {
-        display: flex;
-        flex-flow: row wrap;
-        gap: 0 2rem;
-    }
-
     .right-planning {
         display: flex;
     }
@@ -557,6 +543,20 @@ footer .container {
     .testimonial-info {
         width: calc(100% - 200px - 5rem);
         text-align: left;
+    }
+
+    #features .container {
+        justify-content: center;
+    }
+
+    .benefit {
+        width: calc(100% / 2 - 1.5rem);
+    }
+
+    .benefits {
+        display: flex;
+        flex-flow: row wrap;
+        gap: 0 2rem;
     }
 
     #about-us .left-about {
@@ -588,5 +588,37 @@ footer .container {
 
     #get-started .text-yellow {
         font-size: 4.8rem;
+    }
+}
+
+@media screen and (min-width: 992px) {
+
+    #demo .box:first-child {
+        flex-flow: column wrap;
+        display: flex;
+    }
+
+    #planning .left-planning,
+    #planning .right-planning {
+        width: calc(100% / 2 - 1rem);
+        max-width: 500px;
+    }
+
+    #planning {
+        min-height: 100vh;
+        padding-top: 5rem;
+    }
+
+    #planning #app {
+        max-height: 650px;
+        margin-left: 4rem;
+    }
+
+    #planning #app img {
+        width: 80%;
+    }
+
+    .benefit {
+        width: calc(100% / 3 - 1.5rem);
     }
 }
