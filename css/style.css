@@ -9,6 +9,10 @@
 
 /*Generals*/
 
+html {
+    scroll-behavior: smooth;
+}
+
 .container {
     padding: 3.5rem 2rem 4.5rem 2rem;
 }
@@ -17,6 +21,7 @@ ul {
     list-style: none;
 }
 
+
 /*Texts*/
 
 body {
@@ -24,7 +29,7 @@ body {
 }
 
 p {
-    font-size: 1.3rem;
+    font-size: 1.05rem;
 }
 
 .italic {
@@ -218,7 +223,7 @@ header .container {
 
 nav {
     display: flex;
-    align-items: center;
+   /* align-items: center;*/
     justify-content: space-between;
 }
 
@@ -258,10 +263,7 @@ main {
 }
 
 .box-left,
-.box-right {
-    width: 100%;
-}
-
+.box-right,
 .box-right img {
     width: 100%;
 }
@@ -312,8 +314,8 @@ main {
 }
 
 #planning #app a:hover {
-    background-color: #665edd;
     color: white;
+    background-color: #665edd;
 }
 
 
@@ -380,11 +382,11 @@ main {
 }
 
 
-
 /*About us*/
 
 #about-us h3 {
-    font-size: 2.4rem;
+    font-size: 1.5rem;
+    padding-bottom: 1.8rem;
 }
 
 #about-us p {
@@ -397,7 +399,6 @@ main {
 
 .testimonials-photo {
     position: relative;
-
     margin: 0 0 2rem 0;
 }
 
@@ -408,12 +409,22 @@ main {
     font-size: 5rem;
 }
 
+#about-us .testimonials-photo {
+    width: 180px;
+    height: 180px;
+    margin: 0 0 2rem 0;
+}
+
 
 /*Get started*/
 
 #get-started .subtitle {
     opacity: 60%;
     padding-top: 1rem;
+}
+
+#get-started .copyright {
+    padding-top: 2rem;
 }
 
 #get-started h2 {
@@ -432,12 +443,8 @@ main {
 #get-started button {
     color: #9792E4;
     letter-spacing: .1rem;
-    padding: 1.3rem 5rem;
+    padding: 1rem 3rem;
     border-radius: 40px;
-}
-
-#get-started .copyright {
-    padding-top: 2rem;
 }
 
 #get-started .dot {
@@ -449,11 +456,14 @@ main {
 
 /*Footer*/
 
+footer {
+    background-color: #333333;
+}
+
 footer .container {
     display: flex;
     justify-content: center;
     padding: 3rem 1rem;
-    background-color: #333333;
 }
 
 .text-footer {
@@ -464,5 +474,6 @@ footer .container {
 .text-footer p:first-child {
     margin-bottom: 4rem;
 }
+
 
 /*Media Queries*/
