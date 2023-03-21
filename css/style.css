@@ -263,6 +263,7 @@ main {
     background-color: #B5DDFF;
     width: 100%;
     padding: 2.5rem 1.8rem;
+    margin-bottom: 1.5rem;
 }
 
 .box-left,
@@ -620,6 +621,40 @@ footer .container {
 
     .benefit {
         width: calc(100% / 3 - 1.5rem);
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .menu:hover ul {
+        display: block;
+        position: fixed;
+        z-index: 999;
+        top: calc(80px / 2);
+        right: 20px;
+        margin-right: 1rem;
+        padding: 1rem;
+        background-color: #0084FD;
+        box-shadow: 0 0 10px #888888;
+        border-radius: 20px;
+    }
+
+    .menu ul li a {
+        display: inline-block;
+        width: 150px;
+        padding: 0.5rem 0.5rem;
+        border: 2px solid transparent;
+        border-radius: 20px;
+    }
+
+    .menu ul li a:hover{
+        cursor: pointer;
+        color: #0084FD;
+        background-color: #B5DDFF;
+        padding: 0.5rem 0.5rem;
+    }
+
+    .menu:hover li:last-child{
+        display: none;
     }
 }
 
