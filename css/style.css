@@ -234,7 +234,7 @@ nav {
 header nav .menu,
 header nav a,
 header nav a:visited {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     text-decoration: none;
 }
 
@@ -621,4 +621,69 @@ footer .container {
     .benefit {
         width: calc(100% / 3 - 1.5rem);
     }
+}
+
+
+@media screen and (min-width: 1201px) {
+
+    .h2-medium {
+        font-size: 3rem;
+    }
+
+    .menu i {
+        display: none;
+    }
+
+    .menu ul {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .menu ul li {
+        border-bottom: 3px solid transparent;
+        padding-bottom: 5px;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    header .container {
+        padding: 1rem 3rem;
+    }
+
+    header .container>img {
+        margin-left: -1rem;
+    }
+
+    #demo .box:first-child {
+        flex-flow: row wrap;
+    }
+
+    #demo .box:first-child {
+        flex-flow: row wrap;
+    }
+
+    .box-left,
+    .box-right {
+        width: calc(100% / 2 - 1rem);
+    }
+
+    .box-right {
+        position: relative;
+    }
+
+    .box-right img {
+        position: absolute;
+        bottom: 0;
+        left: 4rem;
+    }
+
+    #about-us h3 {
+        font-size: 1.65rem;
+    }
+
 }
