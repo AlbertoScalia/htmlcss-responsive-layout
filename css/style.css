@@ -9,98 +9,101 @@
 
 /*Generals*/
 
-.container{
+.container {
     padding: 3.5rem 2rem 4.5rem 2rem;
 }
 
+ul {
+    list-style: none;
+}
 
 /*Texts*/
 
-body{
+body {
     font-family: 'PT Sans', sans-serif;
 }
 
-p{
+p {
     font-size: 1.3rem;
 }
 
-.italic{
+.italic {
     font-style: italic;
 }
 
-.regular{
+.regular {
     font-weight: 500;
 }
 
-.bold{
+.bold {
     font-weight: bold;
 }
 
-.text-dark{
+.text-dark {
     color: #333333;
 }
 
-.text-blu{
+.text-blu {
     color: #0084FD;
 }
 
-.text-grey{
+.text-grey {
     color: #5a6e7f;
 }
 
-.text-purple{
+.text-purple {
     color: #9792E4;
 }
 
-.text-white{
+.text-white {
     color: #FFFFFF;
 }
 
-.text-yellow{
-    color:#FDC15F;
+.text-yellow {
+    color: #FDC15F;
 }
 
-.line-height-1-8{
+.line-height-1-8 {
     line-height: 1.8;
 }
 
-.text-center{
+.text-center {
     text-align: center;
 }
 
-.uppercase{
+.uppercase {
     text-transform: uppercase;
 }
 
-.par-small{
+.par-small {
     font-size: 1.15rem;
 }
 
-.par-large{
+.par-large {
     font-size: 1.35rem;
 }
 
 
 /*Titles*/
 
-h2{
+h2 {
     font-size: 1.8rem;
     padding: 5rem 0 2.8rem 0;
 }
 
-.h2-small{
+.h2-small {
     font-size: 2rem;
 }
 
-.h2-medium{
+.h2-medium {
     font-size: 2.8rem;
 }
 
-.h2-large{
+.h2-large {
     font-size: 3.8rem;
 }
 
-h3{
+h3 {
     font-size: 1.5rem;
     margin-bottom: 1.8rem;
 }
@@ -108,22 +111,22 @@ h3{
 
 /*Backgrounds*/
 
-.purple{
-    background-color:  #9792E4;
+.purple {
+    background-color: #9792E4;
 }
 
-.white{
+.white {
     background-color: #FFFFFF;
 }
 
-.blue{
-    background-color:  #0084FD;
+.blue {
+    background-color: #0084FD;
 }
 
 
 /*Buttons*/
 
-.button{
+.button {
     transition: all 0.3s linear;
     font-size: 0.95rem;
     padding: 0.8rem 3.5rem;
@@ -132,11 +135,11 @@ h3{
     cursor: pointer;
 }
 
-.button i{
+.button i {
     margin-right: 0.5rem;
 }
 
-.button-blue{
+.button-blue {
     color: #FFFFFF;
     background-color: #0084FD;
     font-weight: bold;
@@ -144,45 +147,39 @@ h3{
     margin: 1.8rem 0 1.8rem 0;
 }
 
-.button-blue:hover{
-    background-color:  #0043fd;
+.button-blue:hover {
+    background-color: #0043fd;
 }
 
-.button-white{
+.button-white {
     color: #333333;
     background-color: #FFFFFF;
     font-size: 1.095rem;
     padding: 0.4rem 1rem;
 }
 
-.button-white:hover{
+.button-white:hover {
     border: 2px solid #333333;
 }
 
-#call-to-action .button-white:hover{
+.button-purple {
     color: #FFFFFF;
-    background-color:  #FDC15F;
-    border: 2px solid #FFFFFF;
-}
-
-.button-purple{
-    color: #FFFFFF;
-    background-color:  #9792E4;
+    background-color: #9792E4;
     font-size: 0.95rem;
     letter-spacing: 0.1rem;
     font-weight: bold;
     padding: 0.8rem 3.5rem;
 }
 
-.button-no-spacing{
+.button-purple:hover {
+    background-color: #665edd;
+}
+
+.button-no-spacing {
     letter-spacing: 0;
 }
 
-.button-purple:hover{
-    background-color:  #665edd;
-}
-
-.button-hor-padd-small{
+.button-hor-padd-small {
     padding-left: 1rem;
     padding-right: 1rem;
 }
@@ -190,18 +187,18 @@ h3{
 
 /*Borders*/
 
-.bord-small{
+.bord-small {
     border-radius: 20px;
 }
 
-.bord-large{
+.bord-large {
     border-radius: 40px;
 }
 
 
 /*Header*/
 
-header{
+header {
     width: 100vw;
     height: 80px;
     position: fixed;
@@ -211,17 +208,23 @@ header{
     background-color: #0084FD;
 }
 
-header .container{
+header .container {
     padding-top: 1rem;
 }
 
-nav{
+.menu ul {
+    display: none;
+}
+
+nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-header nav .menu, header nav a, header nav a:visited{
+header nav .menu,
+header nav a,
+header nav a:visited {
     font-size: 1.5rem;
     text-decoration: none;
 }
@@ -229,11 +232,17 @@ header nav .menu, header nav a, header nav a:visited{
 
 /*Main generals*/
 
-main{
+main {
     margin-top: 80px;
 }
 
-#demo, #planning, #testimonials, .testimonial-box, #features, #about-us, #get-started {
+#demo,
+#planning,
+#testimonials,
+.testimonial-box,
+#features,
+#about-us,
+#get-started {
     display: flex;
     flex-direction: column;
 }
@@ -241,57 +250,59 @@ main{
 
 /*Demo*/
 
-.box{
-    background-color:#B5DDFF;
+.box {
+    background-color: #B5DDFF;
     width: 100%;
     margin-bottom: 1.5rem;
     padding: 2.5rem 1.8rem;
 }
 
-.box-left, .box-right{
+.box-left,
+.box-right {
     width: 100%;
 }
 
-.box-right img{
+.box-right img {
     width: 100%;
 }
 
-.box-icon{
+.box-icon {
     font-size: 5rem;
     margin-bottom: 1.8rem;
 }
 
-.box:first-child p{
+.box:first-child p {
     text-align: left;
 }
 
-.box:first-child img{
+.box:first-child img {
     margin-bottom: -4px;
     max-width: 250px;
 }
 
-.box:first-child{
+.box:first-child {
     padding-bottom: 0;
 }
 
 
 /*Planning*/
 
-#planning #app h3{
+#planning #app h3 {
     margin: 1.4rem 0;
     padding-bottom: 1.8rem;
 }
 
-#planning img{
+#planning img {
     width: 100%;
 }
 
-#planning #app{
+#planning #app {
     margin: 1.8rem 0 0 0;
     padding: 1rem 1rem;
 }
 
-#planning #app a, #planning #app a:visited{
+#planning #app a,
+#planning #app a:visited {
     text-decoration: none;
     width: 50px;
     height: 50px;
@@ -300,7 +311,7 @@ main{
     border-radius: 50%;
 }
 
-#planning #app a:hover{
+#planning #app a:hover {
     background-color: #665edd;
     color: white;
 }
@@ -308,31 +319,31 @@ main{
 
 /*Testimonials*/
 
-.testimonial-box{
+.testimonial-box {
     min-width: 294px;
     margin-bottom: 2rem;
     padding: 2rem 1.5rem 2rem 1.5rem;
     align-items: center;
 }
 
-#testimonials h2{
+#testimonials h2 {
     padding: 2rem 0;
 }
 
-.testimonials-photo{
+.testimonials-photo {
     margin: 0 auto;
     width: 200px;
     height: 200px;
 }
 
-.testimonials-photo img{
+.testimonials-photo img {
     object-fit: cover;
     width: 100%;
     height: 100%;
     border-radius: 50%;
 }
 
-.testimonial-info .testimonial-description{
+.testimonial-info .testimonial-description {
     padding: 1.3rem 0 1.8rem 0;
 }
 
@@ -343,28 +354,28 @@ main{
 
 /*Features*/
 
-#features .benefit{
+#features .benefit {
     padding: 2.5rem 2rem 2rem 2rem;
     margin-bottom: 2rem;
 }
 
-#features h2{
+#features h2 {
     padding: 1rem 1rem 4rem 1rem;
 }
 
-.benefits{
+.benefits {
     margin-bottom: 2rem;
 }
 
-.benefit .number{
+.benefit .number {
     font-size: 3rem;
 }
 
-.benefit h3{
+.benefit h3 {
     margin-top: 1.5rem;
 }
 
-.benefit p{
+.benefit p {
     margin-bottom: 1.5rem;
 }
 
@@ -372,25 +383,25 @@ main{
 
 /*About us*/
 
-#about-us h3{
+#about-us h3 {
     font-size: 2.4rem;
 }
 
-#about-us p{
+#about-us p {
     margin-bottom: 3rem;
 }
 
-#about-us h2{
+#about-us h2 {
     padding: 1rem 1rem 2rem 0;
 }
 
-.testimonials-photo{
+.testimonials-photo {
     position: relative;
 
     margin: 0 0 2rem 0;
 }
 
-.testimonials-photo i{
+.testimonials-photo i {
     position: absolute;
     top: -1rem;
     right: -1rem;
@@ -400,36 +411,36 @@ main{
 
 /*Get started*/
 
-#get-started .subtitle{
+#get-started .subtitle {
     opacity: 60%;
     padding-top: 1rem;
 }
 
-#get-started h2{
+#get-started h2 {
     padding: 0;
 }
 
-#get-started .content{
+#get-started .content {
     padding: 1.8rem 0;
 }
 
-#get-started .mot{
+#get-started .mot {
     font-size: 2.5rem;
     padding: 1rem 1rem 1.8rem;
 }
 
-#get-started button{
+#get-started button {
     color: #9792E4;
     letter-spacing: .1rem;
     padding: 1.3rem 5rem;
     border-radius: 40px;
 }
 
-#get-started .copyright{
+#get-started .copyright {
     padding-top: 2rem;
 }
 
-#get-started .dot{
+#get-started .dot {
     font-size: 5px;
     line-height: 15px;
     margin: 0 10px;
@@ -438,19 +449,19 @@ main{
 
 /*Footer*/
 
-footer .container{
+footer .container {
     display: flex;
     justify-content: center;
     padding: 3rem 1rem;
     background-color: #333333;
 }
 
-.text-footer{
+.text-footer {
     max-width: 450px;
     padding: 0 1rem;
 }
 
-.text-footer p:first-child{
+.text-footer p:first-child {
     margin-bottom: 4rem;
 }
 
